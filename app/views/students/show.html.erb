@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @student.user.email %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @student.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @student.last_name %>
+</p>
+
+<p>
+  <strong>Middle name:</strong>
+  <%= @student.middle_name %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @student.facebook %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @student.instagram %>
+</p>
+
+<p>
+  <strong>Vkontakte:</strong>
+  <%= @student.vkontakte %>
+</p>
+
+<p>
+  <strong>Youtube:</strong>
+  <%= @student.youtube %>
+</p>
+
+<p>
+  <strong>Hse portfolio:</strong>
+  <%= @student.hse_portfolio %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
+
+<h2>Selfies</h2>
+
+<%= link_to "New Selfie", new_student_selfie_path(@student) %>
+<%= @student.selfies.each do |selfie| %>
+  <%= image_tag selfie.image.url, width: 300 if selfie.image.url != nil %>
+<% end %>

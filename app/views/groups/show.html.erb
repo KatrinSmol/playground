@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @group.cover.url unless @group.cover.url == nil  %>
+
+<p>
+  <strong>Start year:</strong>
+  <%= @group.start_year %>
+</p>
+
+<p>
+  <strong>End year:</strong>
+  <%= @group.end_year %>
+</p>
+
+<p>
+  <strong>Codename:</strong>
+  <%= @group.codename %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @group.name %>
+</p>
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>

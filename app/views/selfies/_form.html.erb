@@ -1,0 +1,27 @@
+<%= form_with(model: selfie, local: true) do |form| %>
+  <% if selfie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(selfie.errors.count, "error") %> prohibited this selfie from being saved:</h2>
+
+      <ul>
+        <% selfie.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.hidden_field :student_id, value: params[:student_id] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

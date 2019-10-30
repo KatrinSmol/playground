@@ -1,0 +1,8 @@
+div {
+  &.image {
+    width: 100px;
+    height: 100px;
+    background-image: image-url("kotik.png");
+    background-size: cover;
+  }
+}

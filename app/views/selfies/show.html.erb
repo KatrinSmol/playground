@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @selfie.student_id %>
+</p>
+
+  <strong>Image:</strong>
+  <%= image_tag selfie.image.url, width: 300px unless selfie.image.url == nil  %>
+
+<%= link_to 'Edit', edit_selfie_path(@selfie) %> |
+<%= link_to 'Back', selfies_path %>
