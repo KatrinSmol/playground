@@ -15,6 +15,7 @@ groups = [
     codename: "HSEADC2017",
     name: "Ночь нежна"
   }, {
+    start_year: 2016,
     end_year:  2020,
     codename: "HSEADC2016",
     name: "Поток 2020"
