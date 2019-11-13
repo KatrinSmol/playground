@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  student_id: 1
+  group_id: 1
+  start_date: 2019-11-07 12:44:03
+  end_date: 2019-11-07 12:44:03
+  reason: MyString
+
+two:
+  student_id: 1
+  group_id: 1
+  start_date: 2019-11-07 12:44:03
+  end_date: 2019-11-07 12:44:03
+  reason: MyString

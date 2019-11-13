@@ -21,15 +21,16 @@
 /storage/*
 !/storage/.keep
 
-/public/assets
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+/public/assets
 /public/packs
 /public/packs-test
 /public/uploads
+/public/autoupload
 /node_modules
 /yarn-error.log
 yarn-debug.log*

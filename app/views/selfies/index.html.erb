@@ -16,9 +16,9 @@
       <tr>
         <td><%= selfie.student_id %></td>
         <td><%= selfie.image %></td>
-        <td><%= link_to 'Show', selfies_path %></td>
-        <td><%= link_to 'Edit', edit_student_selfie_path(selfie) %></td>
-        <td><%= link_to 'Destroy', selfie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%=# link_to 'Show', selfies_path %></td>
+        <td><%=# link_to 'Edit', edit_student_selfie_path(selfie) %></td>
+        <td><%=# link_to 'Destroy', selfie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New selfie', new_selfie_path %>
+<%=# link_to 'New selfie', new_selfie_path %>

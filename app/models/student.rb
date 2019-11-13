@@ -1,4 +1,6 @@
 class Student < ApplicationRecord
   has_many :selfies
-  belongs_to :user
+  has_many :memberships
+  has_many :groups, through: :memberships
+  belongs_to :user, optional: true
 end

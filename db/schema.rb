@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_17_082441) do
+ActiveRecord::Schema.define(version: 2019_11_07_094403) do
 
   create_table "groups", force: :cascade do |t|
     t.integer "start_year"
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 2019_10_17_082441) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "cover"
+  end
+
+  create_table "memberships", force: :cascade do |t|
+    t.integer "student_id"
+    t.integer "group_id"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.string "reason"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "selfies", force: :cascade do |t|
@@ -40,6 +50,7 @@ ActiveRecord::Schema.define(version: 2019_10_17_082441) do
     t.string "hse_portfolio"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
